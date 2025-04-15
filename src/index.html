@@ -8,7 +8,41 @@
 </head>
 <body>
     
+    <header>
+        <h1>Calander Of Any Year</h1>
+    </header>
+
+    <div class="main-section">
+        <div class="year-selection">
+            <input type="text" id="year" class="year" placeholder="Enter the year.....">
+        </div>
+        <select name="month" id="month">
+            <option value="year">Select Month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+
+        <div class="submit-btn">
+            <button type="submit" id="submit" class="btn submit">Submit</button>
+        </div>
+
+    </div>
     
+    <div class="calander">
+        <div class="calander-view" id="calander-view"></div>
+    </div>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
