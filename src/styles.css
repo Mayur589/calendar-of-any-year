@@ -1,26 +1,89 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
+/* General Reset & Font */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-}
-
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 100vw;
-}
-
-header{
-    width: 100%;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #2d3e50;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Input Area Styling */
+  .main-section {
     display: flex;
-    place-content: center;
-    margin: 1.2em 1em;
-    font-size: 2em;
-}
-
-.main-section{
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .year-selection input {
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #month {
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 8px 15px;
+    background-color: #2d3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Calendar Grid */
+  .calander {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    gap: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.3em;
+  }
+  
+  /* Each Day Column */
+  .day {
+    background-color: #ffffff;
+    min-height: 150px;
+    padding: 10px;
     display: flex;
-    width: 100%;
-    place-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 2em;
-    
-}
+  }
+  
+  /* Dates Appended Below Each Day */
+  .date {
+    margin-top: 8px;
+    background-color: #e0eaff;
+    color: #333;
+    padding: 16px 20px;
+    border-radius: 5px;
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
